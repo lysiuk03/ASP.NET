@@ -25,6 +25,10 @@ namespace Artist_biography.Controllers
         {
             return View();
         }
+        public IActionResult Life_history()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
