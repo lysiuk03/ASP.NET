@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to MVC</h1>
+    <hr />
+    <h2>Model–view–controller</h2>
+    <img src="~/images/mvc.png" alt="MVC">
+</div>
+<div>
+    <p><strong>Model–view–controller (MVC)</strong> is a software design pattern commonly used for developing user interfaces
+        that divides the related program logic into three interconnected elements. This is done to separate internal representations
+        of information from the ways information is presented to and accepted from the user.</p>
+    <p>Traditionally used for desktop graphical user interfaces (GUIs), this pattern became popular for designing web applications.
+        Popular programming languages have MVC frameworks that facilitate the implementation of the pattern.</p>
+    <h3>&#11088; History</h3>
+    <p>One of the seminal insights in the early development of graphical user interfaces, MVC became one of the first approaches to 
+        describe and implement software constructs in terms of their responsibilities.</p>
+    <p>Trygve Reenskaug created MVC while working on Smalltalk-79 as a visiting scientist at the Xerox Palo Alto Research Center (PARC)
+        in the late 1970s. He wanted a pattern that could be used to structure any program where users interact with a large,
+        convoluted data set. His design initially had four parts: Model, View, Thing, and Editor. After discussing it with the other
+        Smalltalk developers, he and the rest of the group settled on Model, View, and Controller instead.</p>
+    <p>In their final design, a Model represents some part of the program purely and intuitively. A View is a visual representation of a Model, 
+        retrieving data from the Model to display to the user and passing requests back and forth between the user and the Model. A Controller 
+        is an organizational part of the user interface that lays out and coordinates multiple Views on the screen, and which receives user 
+        input and sends the appropriate messages to its underlying Views. This design also includes an Editor as a specialized kind of 
+        Controller used to modify a particular View, and which is created through that View.</p>
+    <p>Smalltalk-80 supports a version of MVC that evolved from this one. It provides abstract View and Controller classes as well as various
+        concrete subclasses of each that represent different generic widgets. In this scheme, a View represents some way of displaying information
+        to the user, and a Controller represents some way for the user to interact with a View. A View is also coupled to a model object, 
+        but the structure of that object is left up to the application programmer. The Smalltalk-80 environment also includes an "MVC Inspector",
+        a development tool for viewing the structure of a given model, view, and controller side-by-side. </p>
+    <p>In 1988, an article in The Journal of Object Technology (JOT) by two ex-PARC employees presented MVC as a general "programming paradigm and
+        methodology" for Smalltalk-80 developers. However, their scheme differed from both Reenskaug et al.'s and that presented by the Smalltalk-80
+        reference books. They defined a view as covering any graphical concern, with a controller being a more abstract, generally invisible object
+        that receives user input and interacts with one or many views and only one model.</p>
+    <p>The MVC pattern subsequently evolved,giving rise to variants such as hierarchical model–view–controller (HMVC), model–view–adapter (MVA),
+        model–view–presenter (MVP), model–view–viewmodel (MVVM), and others that adapted MVC to different contexts.</p>
+    <p>The use of the MVC pattern in web applications grew after the introduction of NeXT's WebObjects in 1996, which was originally written 
+        in Objective-C (that borrowed heavily from Smalltalk) and helped enforce MVC principles. Later, the MVC pattern became popular with 
+        Java developers when WebObjects was ported to Java. Later frameworks for Java, such as Spring (released in October 2002), continued the 
+        strong bond between Java and MVC.</p>
+    <p>In 2003, Martin Fowler published Patterns of Enterprise Application Architecture, which presented MVC as a pattern where an "input controller" 
+        receives a request, sends the appropriate messages to a model object, takes a response from the model object, and passes the response to 
+        the appropriate view for display.[8]: 56  This is close to the approach taken by the Ruby on Rails web application framework (August 2004),
+        which has the client send requests to the server via an in-browser view, these requests are handled by a controller on the server, and the
+        controller communicates with the appropriate model objects.[12] The Django framework (July 2005, for Python) put forward a similar "MTV" 
+        (Model Template View) take on the pattern, in which a view retrieves data from models and passes it to templates for display.[13] Both 
+        Rails and Django debuted with a strong emphasis on rapid deployment, which increased MVC's popularity outside the traditional enterprise 
+        environment in which it has long been popular.</p>
+    <h3>&#11088; Components</h3>
+    <ul>
+        <li><strong>Model:</strong> Provides data and responds to controller commands by modifying its state.</li>
+        <li><strong>View:</strong> Handles the presentation of model data to the user and responds to changes in the modeol.</li>
+        <li><strong>Controller:</strong> Interprets user actions, notifying the model of the need for changes.</li>
+    </ul>
+</div>
